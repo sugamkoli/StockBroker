@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.irfc-box{
+    height: 100vh;
+    width: 100%;
+}
+/* Navbar */
+.navbar{
+    background-color: violet;
+    width: 100%;
+    height: 6.5vh;
+}
+/* irfc-navbar */
+.irfc-navbar{
+    height: 7vh;
+    background-color: rgb(237, 237, 237);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.irfc-nav-icon{
+    background-color: #999;
+    border-radius: 15%;
+    padding: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+/* irfc-fundamentals */
+
+.irfc-fundamentals{
+    height: 9vh;
+    background-color: rgb(189, 184, 184);
+    
+    
+}
+.irfc-name-price-box{
+    border-radius: 1px solid black;
+}
+
+.name{
+    font-size: 4vh;
+    width: 65%;
+    padding-right: 50px;
+}
+#price{
+    color: red;
+}
+
+.depositary{
+    font-size: 2vh;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    width: 300px; /* Adjust width as needed */
+    border: 2px solid #333;
+}
+
+.row {
+    display: flex;
+}
+
+.row li {
+    list-style: none;
+    flex: 1; /* Equal width for all cells */
+    border: 1px solid #999;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    background: #f2f2f2;
+}
+
+
+.fundamentals-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fundamentals , .info{
+    background-color: rgb(224, 221, 221);
+}
+.fundamentals{
+    width: 60%;
+    height: 70%;
+}
+/* info */
+.info{
+    width: 30%;
+    font-size: 2.5vh;
+    padding-left: 15px;
+}
+
+.About{
+    font-size: 6vh;
+    padding-left: 5px;
+}
+
+
+
+

@@ -1,0 +1,122 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full-screen grid layout */
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Home button */
+.Home-btn {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Auth buttons */
+.auth-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.SignUp-btn, .Login-btn {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Centered content (logo + text + search bar) */
+.content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Logo styling */
+.logo-img {
+    max-width: 400px;
+    height: auto;
+}
+
+/* Stock analysis text */
+.stock-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+/* Search bar styling */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 25px;
+    padding: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 250px;
+    font-size: 16px;
+}
+
+.search-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+}
+
+/* Style placeholder */
+.search-input::placeholder {
+    font-size: 18px;
+    color: gray;
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .search-bar {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .logo-img {
+        max-width: 300px;
+    }
+
+    .stock-text {
+        font-size: 18px;
+        padding: 0 20px;
+    }
+}
