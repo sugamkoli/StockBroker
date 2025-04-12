@@ -3,55 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="IRFC_Styles.css">
-    <title>Indian Railway and Finance Corporation</title>
-    
+    <title>Stock Details - IRFC</title>
+    <link rel="stylesheet" href="ex.css">
 </head>
 <body>
-    <div class="irfc-box">
-        <div class="navbar"></div>
-            <div class="irfc-navbar">
-                <div class="irfc-nav-icon">IRFC</div>
-                <div class="irfc-nav-icon">Charts</div>
-                <div class="irfc-nav-icon">Analysis</div>
-                <div class="irfc-nav-icon">Peers</div>
-                <div class="irfc-nav-icon">Balance Sheet</div>
-            </div>
-                <div class="irfc-fundamentals">
-                    <div class="irfc-name-price-box">
-                        <div class="name"><span class="name">Indian Railway and Finance Corporation</span><span id="price">112.83</span></div>
-                        <div><span class="depositary">BSE:543257</span></div>
-                        <div><span class="depositary">NSE:IRFC</span></div>
-                    </div>
-                </div>
+    <header>
+        <div class="logo">screener<span>.in</span></div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#chart">Chart</a>
+            <a href="#analysis">Analysis</a>
+            <a href="#peers">Peers</a>
+            <a href="#profit-loss">Profit & Loss</a>
+        </nav>
+        <button class="login-btn">Login</button>
+        <button class="signup-btn">Get Free Account</button>
+    </header>
 
-                    <div class="fundamentals-info">
-                        <div class="fundamentals">
-                            <div class="table">
-                                <div class="row">
-                                    <li>Mkt Cap:149k Cr</li>
-                                    <li>PE:22.93</li>
-                                    <li>PB:2.88</li>
-                                </div>
-                                <div class="row">
-                                    <li>ROE:12.56%</li>
-                                    <li>Face Value:10</li>
-                                    <li>Book Value:39.83</li>
-                                </div>
-                                <div class="row">
-                                    <li>7</li>
-                                    <li>8</li>
-                                    <li>9</li>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="info">
-                            <div class="About">About</div>Incorporated in 1986, Indian Railway Finance Corporation borrows funds from the financial markets to finance the acquisition / creation of assets which are then leased out to the Indian Railways as finance lease
-                        </div>
-                    </div>
-                    
-                
-    </div>
+    <main>
+        <section class="stock-container">
+            <h1>Indian Railway Finance Corporation Ltd (IRFC)</h1>
+            <p class="stock-price">₹<span id="stock-price">170</span> <span class="price-change">+0.25%</span></p>
+            <p class="time">02 Apr 2:30 p.m.</p>
+            <p><a href="https://irfc.co.in" target="_blank">irfc.co.in</a> | NSE: IRFC</p>
+
+            <div class="stock-info">
+                <div class="info-box"><span>Market Cap</span>₹ 1,75,000 Cr.</div>
+                <div class="info-box"><span>Stock P/E</span>8.50</div>
+                <div class="info-box"><span>Book Value</span>₹ 30</div>
+                <div class="info-box"><span>Dividend Yield</span>1.85%</div>
+                <div class="info-box"><span>ROCE</span>15.4%</div>
+                <div class="info-box"><span>ROE</span>17.2%</div>
+                <div class="info-box"><span>High/Low</span>₹ 180 / 55</div>
+                <div class="info-box"><span>Face Value</span>₹ 10.00</div>
+            </div>
+
+            <button class="export-btn">Export to Excel</button>
+            <button class="follow-btn">+ Follow</button>
+        </section>
+
+        <!-- Stock Chart -->
+        <section class="chart-container" id="chart">
+            <h2>Stock Chart</h2>
+            <div class="tradingview-widget-container">
+                <div id="tradingview-chart"></div>
+            </div>
+        </section>
+
+        <!-- Analysis Section -->
+        <section class="analysis" id="analysis">
+            <h2>Analysis: Pros & Cons</h2>
+            <div class="pros-cons">
+                <div class="pros">
+                    <h3>Pros ✅</h3>
+                    <ul>
+                        <li>Government-backed entity ensures financial stability.</li>
+                        <li>Strong revenue growth with consistent dividends.</li>
+                        <li>Low-risk business model with steady demand.</li>
+                        <li>Exclusive financing arm for Indian Railways.</li>
+                    </ul>
+                </div>
+                <div class="cons">
+                    <h3>Cons ❌</h3>
+                    <ul>
+                        <li>Highly dependent on government policies.</li>
+                        <li>Interest rate fluctuations can impact profits.</li>
+                        <li>Lower returns compared to high-growth sectors.</li>
+                        <li>Less flexibility in business diversification.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Peers Section -->
+        <section class="peers" id="peers">
+            <h2>Peer Comparison</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Market Cap (Cr.)</th>
+                        <th>Stock P/E</th>
+                        <th>Dividend Yield</th>
+                        <th>ROE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>IRFC</td>
+                        <td>₹1,75,000</td>
+                        <td>8.50</td>
+                        <td>1.85%</td>
+                        <td>17.2%</td>
+                    </tr>
+                    <tr>
+                        <td>Power Finance Corp (PFC)</td>
+                        <td>₹1,50,000</td>
+                        <td>5.60</td>
+                        <td>3.50%</td>
+                        <td>15.4%</td>
+                    </tr>
+                    <tr>
+                        <td>REC Ltd</td>
+                        <td>₹1,60,000</td>
+                        <td>7.20</td>
+                        <td>3.00%</td>
+                        <td>16.8%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Profit & Loss Section -->
+        <section class="profit-loss" id="profit-loss">
+            <h2>Profit & Loss Statement</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Revenue (₹ Cr.)</th>
+                        <th>Net Profit (₹ Cr.)</th>
+                        <th>EPS (₹)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2023</td>
+                        <td>₹25,000</td>
+                        <td>₹8,000</td>
+                        <td>₹12.5</td>
+                    </tr>
+                    <tr>
+                        <td>2022</td>
+                        <td>₹22,500</td>
+                        <td>₹7,500</td>
+                        <td>₹11.8</td>
+                    </tr>
+                    <tr>
+                        <td>2021</td>
+                        <td>₹20,000</td>
+                        <td>₹6,500</td>
+                        <td>₹10.5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="ex.js"></script>
 </body>
 </html>
